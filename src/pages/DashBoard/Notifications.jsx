@@ -5,18 +5,22 @@ function Notifications() {
     {
       message: "Appointment with Dr. Sarah Johnson tomorrow at 10:30 AM",
       type: "danger",
+      leftColor: "red",
     },
     {
       message: "Payment due for consultation on Aug 15, 2025",
       type: "warning",
+      leftColor: "yellow",
     },
     {
       message: "New test results available from your recent lab work",
       type: "info",
+      leftColor: "teal",
     },
     {
       message: "Your 4:00 PM appointment with David Miller has been cancelled.",
       type: "danger",
+      leftColor: "red",
     },
   ];
 
@@ -47,8 +51,9 @@ function Notifications() {
             <div
               key={idx}
               className={`flex items-center space-x-2 p-3 rounded-lg ${style.container}`}
+              style={{ borderLeft: `4px solid ${note.leftColor}` }}
             >
-              {/* Bell Icon (always visible) */}
+              {/* Bell Icon */}
               <FiBell size={18} className="flex-shrink-0 mt-0.5" />
               {/* Message */}
               <p className="text-sm">{note.message}</p>
