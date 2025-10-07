@@ -22,7 +22,7 @@ const links = [
   { icon: <FiCalendar />, label: "Appointment Management", path: "/appontment-management" },
   { icon: <FiUsers />, label: "Medical Records & History", path: "/medical-records-history" },
   { icon: <FiDollarSign />, label: "Billing & Payment", path: "/billing-payment" },
-  { icon: <FiClipboard />, label: "Test Results & Reports", path: "/test-results-reports" },
+  { icon: <FiClipboard />, label: "Test Results & Reports", path: "/testresults-reports" },
   { icon: <FiFileText />, label: "Communication", path: "/communication" },
   { icon: <FiUser />, label: "My Profile", path: "/my-profile" },
 ];
